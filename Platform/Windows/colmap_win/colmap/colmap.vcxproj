@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\base\camera.h" />
+    <ClInclude Include="..\..\..\..\src\base\camera_database.h" />
+    <ClInclude Include="..\..\..\..\src\base\camera_models.h" />
+    <ClInclude Include="..\..\..\..\src\base\camera_rig.h" />
+    <ClInclude Include="..\..\..\..\src\base\correspondence_graph.h" />
+    <ClInclude Include="..\..\..\..\src\base\cost_functions.h" />
+    <ClInclude Include="..\..\..\..\src\base\database.h" />
+    <ClInclude Include="..\..\..\..\src\base\database_cache.h" />
+    <ClInclude Include="..\..\..\..\src\base\essential_matrix.h" />
+    <ClInclude Include="..\..\..\..\src\base\gps.h" />
+    <ClInclude Include="..\..\..\..\src\base\graph_cut.h" />
+    <ClInclude Include="..\..\..\..\src\base\homography_matrix.h" />
+    <ClInclude Include="..\..\..\..\src\base\image.h" />
+    <ClInclude Include="..\..\..\..\src\base\image_reader.h" />
+    <ClInclude Include="..\..\..\..\src\base\line.h" />
+    <ClInclude Include="..\..\..\..\src\base\point2d.h" />
+    <ClInclude Include="..\..\..\..\src\base\point3d.h" />
+    <ClInclude Include="..\..\..\..\src\base\polynomial.h" />
+    <ClInclude Include="..\..\..\..\src\base\pose.h" />
+    <ClInclude Include="..\..\..\..\src\base\projection.h" />
+    <ClInclude Include="..\..\..\..\src\base\reconstruction.h" />
+    <ClInclude Include="..\..\..\..\src\base\reconstruction_manager.h" />
+    <ClInclude Include="..\..\..\..\src\base\scene_clustering.h" />
+    <ClInclude Include="..\..\..\..\src\base\similarity_transform.h" />
+    <ClInclude Include="..\..\..\..\src\base\track.h" />
+    <ClInclude Include="..\..\..\..\src\base\triangulation.h" />
+    <ClInclude Include="..\..\..\..\src\base\undistortion.h" />
+    <ClInclude Include="..\..\..\..\src\base\visibility_pyramid.h" />
+    <ClInclude Include="..\..\..\..\src\base\warp.h" />
+    <ClInclude Include="..\..\..\..\src\controllers\automatic_reconstruction.h" />
+    <ClInclude Include="..\..\..\..\src\controllers\bundle_adjustment.h" />
+    <ClInclude Include="..\..\..\..\src\controllers\hierarchical_mapper.h" />
+    <ClInclude Include="..\..\..\..\src\controllers\incremental_mapper.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\absolute_pose.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\affine_transform.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\coordinate_frame.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\essential_matrix.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\essential_matrix_coeffs.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\essential_matrix_poly.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\euclidean_transform.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\fundamental_matrix.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\generalized_absolute_pose.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\generalized_absolute_pose_coeffs.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\generalized_relative_pose.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\homography_matrix.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\pose.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\similarity_transform.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\translation_transform.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\triangulation.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\two_view_geometry.h" />
+    <ClInclude Include="..\..\..\..\src\estimators\utils.h" />
+    <ClInclude Include="..\..\..\..\src\feature\extraction.h" />
+    <ClInclude Include="..\..\..\..\src\feature\matching.h" />
+    <ClInclude Include="..\..\..\..\src\feature\sift.h" />
+    <ClInclude Include="..\..\..\..\src\feature\types.h" />
+    <ClInclude Include="..\..\..\..\src\feature\utils.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\consistency_graph.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\cuda_array_wrapper.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\cuda_flip.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\cuda_rotate.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\cuda_transpose.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\depth_map.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\fusion.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\gpu_mat.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\gpu_mat_prng.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\gpu_mat_ref_image.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\image.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\mat.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\meshing.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\model.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\normal_map.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\patch_match.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\patch_match_cuda.h" />
+    <ClInclude Include="..\..\..\..\src\mvs\workspace.h" />
+    <ClInclude Include="..\..\..\..\src\optim\bundle_adjustment.h" />
+    <ClInclude Include="..\..\..\..\src\optim\combination_sampler.h" />
+    <ClInclude Include="..\..\..\..\src\optim\least_absolute_deviations.h" />
+    <ClInclude Include="..\..\..\..\src\optim\loransac.h" />
+    <ClInclude Include="..\..\..\..\src\optim\progressive_sampler.h" />
+    <ClInclude Include="..\..\..\..\src\optim\random_sampler.h" />
+    <ClInclude Include="..\..\..\..\src\optim\ransac.h" />
+    <ClInclude Include="..\..\..\..\src\optim\sampler.h" />
+    <ClInclude Include="..\..\..\..\src\optim\sprt.h" />
+    <ClInclude Include="..\..\..\..\src\optim\support_measurement.h" />
+    <ClInclude Include="..\..\..\..\src\retrieval\geometry.h" />
+    <ClInclude Include="..\..\..\..\src\retrieval\inverted_file.h" />
+    <ClInclude Include="..\..\..\..\src\retrieval\inverted_file_entry.h" />
+    <ClInclude Include="..\..\..\..\src\retrieval\inverted_index.h" />
+    <ClInclude Include="..\..\..\..\src\retrieval\utils.h" />
+    <ClInclude Include="..\..\..\..\src\retrieval\visual_index.h" />
+    <ClInclude Include="..\..\..\..\src\retrieval\vote_and_verify.h" />
+    <ClInclude Include="..\..\..\..\src\sfm\incremental_mapper.h" />
+    <ClInclude Include="..\..\..\..\src\sfm\incremental_triangulator.h" />
+    <ClInclude Include="..\..\..\..\src\ui\automatic_reconstruction_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\bundle_adjustment_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\colormaps.h" />
+    <ClInclude Include="..\..\..\..\src\ui\database_management_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\dense_reconstruction_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\feature_extraction_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\feature_matching_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\image_viewer_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\license_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\line_painter.h" />
+    <ClInclude Include="..\..\..\..\src\ui\log_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\main_window.h" />
+    <ClInclude Include="..\..\..\..\src\ui\match_matrix_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\model_viewer_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\movie_grabber_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\options_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\point_painter.h" />
+    <ClInclude Include="..\..\..\..\src\ui\point_viewer_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\project_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\qt_utils.h" />
+    <ClInclude Include="..\..\..\..\src\ui\reconstruction_manager_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\reconstruction_options_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\reconstruction_stats_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\render_options.h" />
+    <ClInclude Include="..\..\..\..\src\ui\render_options_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\thread_control_widget.h" />
+    <ClInclude Include="..\..\..\..\src\ui\triangle_painter.h" />
+    <ClInclude Include="..\..\..\..\src\ui\undistortion_widget.h" />
+    <ClInclude Include="..\..\..\..\src\util\alignment.h" />
+    <ClInclude Include="..\..\..\..\src\util\bitmap.h" />
+    <ClInclude Include="..\..\..\..\src\util\cache.h" />
+    <ClInclude Include="..\..\..\..\src\util\camera_specs.h" />
+    <ClInclude Include="..\..\..\..\src\util\cuda.h" />
+    <ClInclude Include="..\..\..\..\src\util\cudacc.h" />
+    <ClInclude Include="..\..\..\..\src\util\endian.h" />
+    <ClInclude Include="..\..\..\..\src\util\logging.h" />
+    <ClInclude Include="..\..\..\..\src\util\math.h" />
+    <ClInclude Include="..\..\..\..\src\util\matrix.h" />
+    <ClInclude Include="..\..\..\..\src\util\misc.h" />
+    <ClInclude Include="..\..\..\..\src\util\opengl_utils.h" />
+    <ClInclude Include="..\..\..\..\src\util\option_manager.h" />
+    <ClInclude Include="..\..\..\..\src\util\ply.h" />
+    <ClInclude Include="..\..\..\..\src\util\random.h" />
+    <ClInclude Include="..\..\..\..\src\util\sqlite3_utils.h" />
+    <ClInclude Include="..\..\..\..\src\util\string.h" />
+    <ClInclude Include="..\..\..\..\src\util\testing.h" />
+    <ClInclude Include="..\..\..\..\src\util\threading.h" />
+    <ClInclude Include="..\..\..\..\src\util\timer.h" />
+    <ClInclude Include="..\..\..\..\src\util\types.h" />
+    <ClInclude Include="..\..\..\..\src\util\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\base\camera.cc" />
+    <ClCompile Include="..\..\..\..\src\base\camera_database.cc" />
+    <ClCompile Include="..\..\..\..\src\base\camera_database_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\camera_models.cc" />
+    <ClCompile Include="..\..\..\..\src\base\camera_models_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\camera_rig.cc" />
+    <ClCompile Include="..\..\..\..\src\base\camera_rig_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\camera_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\correspondence_graph.cc" />
+    <ClCompile Include="..\..\..\..\src\base\correspondence_graph_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\cost_functions_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\database.cc" />
+    <ClCompile Include="..\..\..\..\src\base\database_cache.cc" />
+    <ClCompile Include="..\..\..\..\src\base\database_cache_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\database_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\essential_matrix.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\essential_matrix_test.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ModuleOutputFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\gps.cc" />
+    <ClCompile Include="..\..\..\..\src\base\gps_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\graph_cut.cc" />
+    <ClCompile Include="..\..\..\..\src\base\graph_cut_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\homography_matrix.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\homography_matrix_test.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ModuleOutputFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\image.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\image_reader.cc" />
+    <ClCompile Include="..\..\..\..\src\base\image_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\line.cc" />
+    <ClCompile Include="..\..\..\..\src\base\line_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\point2d.cc" />
+    <ClCompile Include="..\..\..\..\src\base\point2d_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\point3d.cc" />
+    <ClCompile Include="..\..\..\..\src\base\point3d_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\polynomial.cc" />
+    <ClCompile Include="..\..\..\..\src\base\polynomial_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\pose.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\pose_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\projection.cc" />
+    <ClCompile Include="..\..\..\..\src\base\projection_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\reconstruction.cc" />
+    <ClCompile Include="..\..\..\..\src\base\reconstruction_manager.cc" />
+    <ClCompile Include="..\..\..\..\src\base\reconstruction_manager_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\reconstruction_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\scene_clustering.cc" />
+    <ClCompile Include="..\..\..\..\src\base\scene_clustering_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\similarity_transform.cc" />
+    <ClCompile Include="..\..\..\..\src\base\similarity_transform_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\track.cc" />
+    <ClCompile Include="..\..\..\..\src\base\track_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\triangulation.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\triangulation_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\undistortion.cc" />
+    <ClCompile Include="..\..\..\..\src\base\undistortion_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\visibility_pyramid.cc" />
+    <ClCompile Include="..\..\..\..\src\base\visibility_pyramid_test.cc" />
+    <ClCompile Include="..\..\..\..\src\base\warp.cc" />
+    <ClCompile Include="..\..\..\..\src\base\warp_test.cc" />
+    <ClCompile Include="..\..\..\..\src\controllers\automatic_reconstruction.cc" />
+    <ClCompile Include="..\..\..\..\src\controllers\bundle_adjustment.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\controllers\hierarchical_mapper.cc" />
+    <ClCompile Include="..\..\..\..\src\controllers\incremental_mapper.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\absolute_pose.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\absolute_pose_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\affine_transform.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\affine_transform_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\coordinate_frame.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\coordinate_frame_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\essential_matrix.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\essential_matrix_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\fundamental_matrix.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\fundamental_matrix_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_absolute_pose.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_absolute_pose_coeffs.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_absolute_pose_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_relative_pose.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_relative_pose_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\homography_matrix.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\homography_matrix_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\pose.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\translation_transform_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\triangulation.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\two_view_geometry.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\two_view_geometry_test.cc" />
+    <ClCompile Include="..\..\..\..\src\estimators\utils.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\utils_test.cc" />
+    <ClCompile Include="..\..\..\..\src\feature\extraction.cc" />
+    <ClCompile Include="..\..\..\..\src\feature\matching.cc" />
+    <ClCompile Include="..\..\..\..\src\feature\sift.cc" />
+    <ClCompile Include="..\..\..\..\src\feature\sift_test.cc" />
+    <ClCompile Include="..\..\..\..\src\feature\types.cc" />
+    <ClCompile Include="..\..\..\..\src\feature\types_test.cc" />
+    <ClCompile Include="..\..\..\..\src\feature\utils.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\utils_test.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ModuleOutputFile>
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ModuleOutputFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\consistency_graph.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\consistency_graph_test.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\depth_map.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\depth_map_test.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\fusion.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\image.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\mat_test.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\meshing.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\model.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\normal_map.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\normal_map_test.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\patch_match.cc" />
+    <ClCompile Include="..\..\..\..\src\mvs\workspace.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\bundle_adjustment.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\bundle_adjustment_test.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\combination_sampler.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\combination_sampler_test.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\least_absolute_deviations.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\least_absolute_deviations_test.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\loransac_test.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\progressive_sampler.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\progressive_sampler_test.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\random_sampler.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\random_sampler_test.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\ransac_test.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\sprt.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\support_measurement.cc" />
+    <ClCompile Include="..\..\..\..\src\optim\support_measurement_test.cc" />
+    <ClCompile Include="..\..\..\..\src\retrieval\geometry.cc" />
+    <ClCompile Include="..\..\..\..\src\retrieval\geometry_test.cc" />
+    <ClCompile Include="..\..\..\..\src\retrieval\inverted_file_entry_test.cc" />
+    <ClCompile Include="..\..\..\..\src\retrieval\visual_index_test.cc" />
+    <ClCompile Include="..\..\..\..\src\retrieval\vote_and_verify.cc" />
+    <ClCompile Include="..\..\..\..\src\sfm\incremental_mapper.cc">
+      <ModuleOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ModuleOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sfm\incremental_triangulator.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\automatic_reconstruction_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\bundle_adjustment_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\colormaps.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\database_management_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\dense_reconstruction_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\feature_extraction_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\feature_matching_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\image_viewer_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\license_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\line_painter.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\log_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\main_window.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\match_matrix_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\model_viewer_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\movie_grabber_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\options_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\point_painter.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\point_viewer_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\project_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\qrc_resources_CMAKE_.cpp" />
+    <ClCompile Include="..\..\..\..\src\ui\qt_utils.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\reconstruction_manager_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\reconstruction_options_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\reconstruction_stats_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\render_options.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\render_options_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\thread_control_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\triangle_painter.cc" />
+    <ClCompile Include="..\..\..\..\src\ui\undistortion_widget.cc" />
+    <ClCompile Include="..\..\..\..\src\util\bitmap.cc" />
+    <ClCompile Include="..\..\..\..\src\util\bitmap_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\cache_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\camera_specs.cc" />
+    <ClCompile Include="..\..\..\..\src\util\cuda.cc" />
+    <ClCompile Include="..\..\..\..\src\util\cudacc.cc" />
+    <ClCompile Include="..\..\..\..\src\util\endian_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\logging.cc" />
+    <ClCompile Include="..\..\..\..\src\util\math.cc" />
+    <ClCompile Include="..\..\..\..\src\util\math_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\matrix_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\misc.cc" />
+    <ClCompile Include="..\..\..\..\src\util\misc_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\opengl_utils.cc" />
+    <ClCompile Include="..\..\..\..\src\util\opengl_utils_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\option_manager.cc" />
+    <ClCompile Include="..\..\..\..\src\util\ply.cc" />
+    <ClCompile Include="..\..\..\..\src\util\random.cc" />
+    <ClCompile Include="..\..\..\..\src\util\random_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\string.cc" />
+    <ClCompile Include="..\..\..\..\src\util\string_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\threading.cc" />
+    <ClCompile Include="..\..\..\..\src\util\threading_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\timer.cc" />
+    <ClCompile Include="..\..\..\..\src\util\timer_test.cc" />
+    <ClCompile Include="..\..\..\..\src\util\version.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\src\estimators\CMakeLists.txt" />
+    <Text Include="..\..\..\..\src\optim\CMakeLists.txt" />
+    <Text Include="..\..\..\..\src\ui\CMakeLists.txt" />
+    <Text Include="..\..\..\..\src\util\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\..\..\src\mvs\gpu_mat_prng.cu" />
+    <CudaCompile Include="..\..\..\..\src\mvs\gpu_mat_ref_image.cu" />
+    <CudaCompile Include="..\..\..\..\src\mvs\gpu_mat_test.cu" />
+    <CudaCompile Include="..\..\..\..\src\mvs\patch_match_cuda.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\ui\resources.qrc" />
+    <None Include="..\..\..\..\src\util\version.h.in" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{531E2609-64E2-4980-906C-383920AFDE0B}</ProjectGuid>
+    <RootNamespace>colmap</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.8.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\ThirdParty\colmap_cuda_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\ThirdParty\colmap_cuda.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.8.targets" />
+  </ImportGroup>
+</Project>

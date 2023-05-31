@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{fb1d8fb7-edb5-40ac-a0c0-70e1848a71ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controllers">
+      <UniqueIdentifier>{187a21c7-5a67-4e99-8a44-ff238d26c801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="estimators">
+      <UniqueIdentifier>{0952ffac-26c7-487e-a671-33f3b89cb91c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="feature">
+      <UniqueIdentifier>{148ec214-28d6-43e5-8373-d510efe647fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mvs">
+      <UniqueIdentifier>{a887e11d-054e-4419-bfb7-23b31b160388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="optim">
+      <UniqueIdentifier>{d9ef6f59-a7a5-4a79-a6e9-8af0e4cb0deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="retrieval">
+      <UniqueIdentifier>{208db22f-4a41-402d-9503-6d11ce780ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sfm">
+      <UniqueIdentifier>{dd7eecc9-4d02-415d-8523-ae9d3d3df1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{defe3fe6-67b5-4c0e-aacb-fb66626f27f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{8b041a7b-058b-49d5-87cd-cd58938ccc2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\base\camera_database.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\camera_models.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\camera_rig.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\correspondence_graph.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\cost_functions.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\database.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\database_cache.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\essential_matrix.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\gps.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\graph_cut.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\homography_matrix.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\image.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\image_reader.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\line.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\point2d.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\point3d.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\polynomial.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\pose.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\projection.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\reconstruction.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\reconstruction_manager.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\scene_clustering.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\similarity_transform.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\track.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\triangulation.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\undistortion.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\visibility_pyramid.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\warp.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\base\camera.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\controllers\automatic_reconstruction.h">
+      <Filter>controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\controllers\bundle_adjustment.h">
+      <Filter>controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\controllers\hierarchical_mapper.h">
+      <Filter>controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\controllers\incremental_mapper.h">
+      <Filter>controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\absolute_pose.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\affine_transform.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\coordinate_frame.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\essential_matrix.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\essential_matrix_coeffs.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\essential_matrix_poly.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\euclidean_transform.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\fundamental_matrix.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\generalized_absolute_pose.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\generalized_absolute_pose_coeffs.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\generalized_relative_pose.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\homography_matrix.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\pose.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\similarity_transform.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\translation_transform.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\triangulation.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\two_view_geometry.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\estimators\utils.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\feature\extraction.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\feature\matching.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\feature\sift.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\feature\types.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\feature\utils.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\consistency_graph.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\cuda_array_wrapper.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\cuda_flip.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\cuda_rotate.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\cuda_transpose.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\depth_map.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\fusion.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\gpu_mat.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\gpu_mat_prng.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\gpu_mat_ref_image.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\image.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\mat.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\meshing.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\model.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\normal_map.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\patch_match.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\patch_match_cuda.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\workspace.h">
+      <Filter>mvs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\combination_sampler.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\least_absolute_deviations.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\loransac.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\progressive_sampler.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\random_sampler.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\ransac.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\sampler.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\sprt.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\support_measurement.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\optim\bundle_adjustment.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\retrieval\geometry.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\retrieval\inverted_file.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\retrieval\inverted_file_entry.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\retrieval\inverted_index.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\retrieval\utils.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\retrieval\visual_index.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\retrieval\vote_and_verify.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sfm\incremental_mapper.h">
+      <Filter>sfm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sfm\incremental_triangulator.h">
+      <Filter>sfm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\automatic_reconstruction_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\bundle_adjustment_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\colormaps.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\database_management_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\dense_reconstruction_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\feature_extraction_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\feature_matching_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\image_viewer_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\license_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\line_painter.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\log_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\main_window.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\match_matrix_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\model_viewer_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\movie_grabber_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\options_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\point_painter.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\point_viewer_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\project_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\qt_utils.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\reconstruction_manager_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\reconstruction_options_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\reconstruction_stats_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\render_options.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\render_options_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\thread_control_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\triangle_painter.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ui\undistortion_widget.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\cache.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\camera_specs.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\cuda.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\cudacc.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\endian.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\logging.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\math.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\matrix.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\misc.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\opengl_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\option_manager.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\ply.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\random.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\sqlite3_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\string.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\testing.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\threading.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\timer.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\types.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\version.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\alignment.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\bitmap.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\base\camera_database_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\camera_models.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\camera_models_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\camera_rig.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\camera_rig_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\camera_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\correspondence_graph.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\correspondence_graph_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\cost_functions_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\database.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\database_cache.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\database_cache_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\database_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\essential_matrix.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\essential_matrix_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\gps.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\gps_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\graph_cut.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\graph_cut_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\homography_matrix.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\homography_matrix_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\image.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\image_reader.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\image_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\line.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\line_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\point2d.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\point2d_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\point3d.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\point3d_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\polynomial.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\polynomial_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\pose.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\pose_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\projection.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\projection_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\reconstruction.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\reconstruction_manager.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\reconstruction_manager_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\reconstruction_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\scene_clustering.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\scene_clustering_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\similarity_transform.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\similarity_transform_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\track.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\track_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\triangulation.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\triangulation_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\undistortion.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\undistortion_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\visibility_pyramid.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\visibility_pyramid_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\warp.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\warp_test.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\camera.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\camera_database.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\controllers\automatic_reconstruction.cc">
+      <Filter>controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\controllers\bundle_adjustment.cc">
+      <Filter>controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\controllers\hierarchical_mapper.cc">
+      <Filter>controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\controllers\incremental_mapper.cc">
+      <Filter>controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\absolute_pose.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\absolute_pose_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\affine_transform.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\affine_transform_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\coordinate_frame.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\coordinate_frame_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\essential_matrix.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\essential_matrix_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\fundamental_matrix.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\fundamental_matrix_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_absolute_pose.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_absolute_pose_coeffs.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_absolute_pose_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_relative_pose.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\generalized_relative_pose_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\homography_matrix.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\homography_matrix_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\pose.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\translation_transform_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\triangulation.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\two_view_geometry.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\two_view_geometry_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\utils.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\estimators\utils_test.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\extraction.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\matching.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\sift.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\sift_test.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\types.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\types_test.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\utils.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\feature\utils_test.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\consistency_graph.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\consistency_graph_test.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\depth_map.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\depth_map_test.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\fusion.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\image.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\mat_test.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\meshing.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\model.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\normal_map.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\normal_map_test.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\patch_match.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\workspace.cc">
+      <Filter>mvs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\bundle_adjustment_test.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\combination_sampler.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\combination_sampler_test.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\least_absolute_deviations.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\least_absolute_deviations_test.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\loransac_test.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\progressive_sampler.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\progressive_sampler_test.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\random_sampler.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\random_sampler_test.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\ransac_test.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\sprt.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\support_measurement.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\support_measurement_test.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\optim\bundle_adjustment.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\retrieval\geometry.cc">
+      <Filter>retrieval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\retrieval\geometry_test.cc">
+      <Filter>retrieval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\retrieval\inverted_file_entry_test.cc">
+      <Filter>retrieval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\retrieval\visual_index_test.cc">
+      <Filter>retrieval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\retrieval\vote_and_verify.cc">
+      <Filter>retrieval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sfm\incremental_mapper.cc">
+      <Filter>sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sfm\incremental_triangulator.cc">
+      <Filter>sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\automatic_reconstruction_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\bundle_adjustment_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\colormaps.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\database_management_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\dense_reconstruction_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\feature_extraction_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\feature_matching_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\image_viewer_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\license_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\line_painter.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\log_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\main_window.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\match_matrix_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\model_viewer_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\movie_grabber_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\options_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\point_painter.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\point_viewer_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\project_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\qt_utils.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\reconstruction_manager_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\reconstruction_options_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\reconstruction_stats_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\render_options.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\render_options_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\thread_control_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\triangle_painter.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\undistortion_widget.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\bitmap_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\cache_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\camera_specs.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\cuda.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\cudacc.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\endian_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\logging.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\math.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\math_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\matrix_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\misc.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\misc_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\opengl_utils.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\opengl_utils_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\option_manager.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\ply.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\random.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\random_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\string.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\string_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\threading.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\threading_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\timer.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\timer_test.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\version.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\bitmap.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ui\qrc_resources_CMAKE_.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\src\estimators\CMakeLists.txt">
+      <Filter>estimators</Filter>
+    </Text>
+    <Text Include="..\..\..\..\src\optim\CMakeLists.txt">
+      <Filter>optim</Filter>
+    </Text>
+    <Text Include="..\..\..\..\src\ui\CMakeLists.txt">
+      <Filter>ui</Filter>
+    </Text>
+    <Text Include="..\..\..\..\src\util\CMakeLists.txt">
+      <Filter>util</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\..\..\src\mvs\gpu_mat_prng.cu">
+      <Filter>mvs</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\..\..\src\mvs\gpu_mat_ref_image.cu">
+      <Filter>mvs</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\..\..\src\mvs\gpu_mat_test.cu">
+      <Filter>mvs</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\..\..\src\mvs\patch_match_cuda.cu">
+      <Filter>mvs</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\ui\resources.qrc">
+      <Filter>ui</Filter>
+    </None>
+    <None Include="..\..\..\..\src\util\version.h.in">
+      <Filter>util</Filter>
+    </None>
+  </ItemGroup>
+</Project>

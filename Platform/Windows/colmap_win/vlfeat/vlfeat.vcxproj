@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9FF8E12B-0876-458A-9FEC-B0148CF8B54D}</ProjectGuid>
+    <RootNamespace>vlfeat</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.8.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\ThirdParty\colmap_cuda_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\ThirdParty\colmap_cuda.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\lib\VLFeat\ikmeans_elkan.tc" />
+    <None Include="..\..\..\..\lib\VLFeat\ikmeans_init.tc" />
+    <None Include="..\..\..\..\lib\VLFeat\ikmeans_lloyd.tc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\lib\VLFeat\aib.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\array.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\covdet.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\dsift.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\fisher.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\generic.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\getopt_long.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\gmm.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\hikmeans.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\hog.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\homkermap.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\host.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\ikmeans.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\imopv.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\imopv_sse2.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\kdtree.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\kmeans.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\lbp.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\liop.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\mathop.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\mathop_avx.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\mathop_sse2.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\mser.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\pgm.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\quickshift.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\random.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\rodrigues.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\scalespace.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\sift.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\slic.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\stringop.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\svm.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\svmdataset.c" />
+    <ClCompile Include="..\..\..\..\lib\VLFeat\vlad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\lib\VLFeat\aib.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\array.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\covdet.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\dsift.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\fisher.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\float.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\generic.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\getopt_long.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\gmm.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\heap-def.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\hikmeans.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\hog.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\homkermap.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\host.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\ikmeans.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\imopv.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\imopv_sse2.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\kdtree.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\kmeans.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\lbp.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\liop.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\mathop.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\mathop_avx.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\mathop_sse2.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\mser.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\pgm.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\qsort-def.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\quickshift.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\random.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\rodrigues.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\scalespace.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\shuffle-def.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\sift.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\slic.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\stringop.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\svm.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\svmdataset.h" />
+    <ClInclude Include="..\..\..\..\lib\VLFeat\vlad.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.8.targets" />
+  </ImportGroup>
+</Project>

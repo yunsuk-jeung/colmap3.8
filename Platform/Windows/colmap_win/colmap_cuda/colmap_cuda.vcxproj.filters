@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{ba535560-7540-4d3d-9711-7fc4f6cc7c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ae999d96-4840-4b46-a7cf-5bd892c8e277}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\util\cuda.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\util\cudacc.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\mvs\patch_match.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\util\cuda.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\util\cudacc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\gpu_mat_ref_image.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\gpu_mat_prng.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\patch_match.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\mvs\patch_match_cuda.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\..\..\src\mvs\gpu_mat_prng.cu">
+      <Filter>src</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\..\..\src\mvs\gpu_mat_ref_image.cu">
+      <Filter>src</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\..\..\src\mvs\patch_match_cuda.cu">
+      <Filter>src</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
